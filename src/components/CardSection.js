@@ -6,7 +6,6 @@ import food from '../images/food.png'
 import icecream from '../images/icecream.png'
 import junkfood from '../images/junkfood.png'
 import drink from '../images/drink.png'
-import Button from './Button'
 
 export default function CardSection() {
   return (

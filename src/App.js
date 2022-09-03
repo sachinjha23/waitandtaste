@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import{
   BrowserRouter as Router,
-  HashRouter,
   Routes,
   Route
 } from 'react-router-dom';
@@ -13,7 +12,7 @@ import MenuPage from './components/MenuPage';
 import ContactPage from './components/ContactPage';
 function App() {
   return (
-    <HashRouter>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>} />
@@ -23,7 +22,7 @@ function App() {
       </Routes>
       <Footer/>
 
-    </HashRouter>
+    </Router>
   );
 }
 
